@@ -1,0 +1,96 @@
+<!-- English language version, only content is affected, code is the same in the /sv/ version with the exception of changed file-paths for internal assets.-->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Contact Majgull Axelsson</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- jQuery, Bootstrap etc-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <!-- My JavaScript -->
+    <script type="javascript" src="../assets/js/main.js"></script>
+</head>
+
+<body id="bg-img">
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-sm bg-light navbar-light" id="navbar-styles">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="navbar-nav">
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="start.html">Home</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link active" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="books.html">Books</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="about.html">About the site</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Navbar section for toggling language, TODO: update on each html so the href is correct for that page -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link mr-4" href="../sv/start.html"><img
+                        src="../assets/images/icons/sweden-flag-icon-16.png"></a>
+            </li>
+            <li class="nav-item mr-4">
+                <a class="nav-link" href="../en/start.html"><img
+                        src="../assets/images/icons/united-kingdom-flag-icon-16.png"></a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="row content-wrapper bg-light">
+            <div class="col-md-3 col-sm-12">
+                <h3>Contact information:</h3><br>
+                <p>If you'd like to contact Majgull, you can use this form. Majgull has chosen to not have a social media presence, although the webmaster of this site maintains her Goodreads account. All emails will be forwarded to Majgull, who will try to respond to as many inquiries as she can.</p>
+            </div>
+            <div class="col-md-9 col-sm-12">
+                <h1>Contact form: </h1><br>
+                <form form="maContactSheet" class="form-horizontal">
+                    
+                    <label for="inputEmail">Please enter your full name: </label>
+                    <br>
+                    <input type="text" class="form-control" id="inputFullName" placeholder="Enter your full name..."><br>
+                    <label for="inputEmail">Please enter your email-address: </label>
+                    <br>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="example@adress.com" aria-describedby="emailHelp"><br>
+                    <small id="emailHelp" class="form-text text-muted" style="display: none;">Please enter the adress you'd like the reply sent to.</small>
+                    <label for="inputText">Please enter your message (Max 500 characters.)</label>
+                    <br>
+                    <input type="textarea" class="form-control" maxlength="500" placeholder="Enter your message here (500max)...">
+                    <br>
+                    <input type="submit" class="btn btn-primary" value="Submit button">
+                </form>
+
+            </div>  
+
+
+        </div>
+
+    </div>
+
+<!-- Add EmailJS code below this point! -->
+
+</body>
+
+</html>

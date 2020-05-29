@@ -1,0 +1,72 @@
+<!-- Landing page for language selection. -->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Majgull Axelsson - Author, Lecturer and Journalist</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <!-- My JavaScript -->
+  <script type="javascript" src="assets/js/main.js"></script>
+  <!-- My CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body id="bg-img">
+  <div id="index-intro-container" class="container-fluid" style="display: none;"> <!-- ID used with inline JavaScript to use jQuery hide while maintaining compatibility for users without JS in their browsers. A rarity, but Stack Oveflow said it could happen. -->
+  
+    
+    <span class="row">
+      <div class="col-12 index-headers">
+        <h1>Majgull Axelsson - Author, Lecturer, Journalist</h1><br>
+        <br>
+        <h2> Please choose between the Swedish or English version of this site / Var vänlig välj mellan den engelska
+          eller den svenska versionen av hemsidan</h2><br>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="col-md language-choice">
+        
+        <a id="en" href="en\start.html"><img src="assets/images/icons/united-kingdom-flag-icon-16.png"><br>
+          <h3>English</h3>
+        </a><br>
+      </div>
+       
+      <div class="col-md language-choice">
+        <a id="sv" href="sv\start.html"><img src="assets\images\icons\sweden-flag-icon-16.png"><br>
+          <h3>Svenska</h3>
+        </a><br>
+      </div>
+  </span>
+
+  <script type="text/javascript">
+  
+  // Fade-in animation to trigger when the DOM is fully loaded.
+
+    $(document).ready(function() {
+
+      $("#index-intro-container").fadeIn(1000);
+      
+    });
+
+  </script>
+</body>
+
+</html>

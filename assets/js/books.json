@@ -1,0 +1,12 @@
+{
+    "aprilWitchEn": {
+        "title": "April Witch",
+        "published": "1997",
+        "coverIMG": "../assets/images/books/omslag_aprilhaxan.jpg"
+    },
+    "rosarioEn": {
+        "title": "Rosario is dead",
+        "published": "1989",
+        "coverIMG": "../assets/images/books/omslag_rosario.jpg"
+    }
+}

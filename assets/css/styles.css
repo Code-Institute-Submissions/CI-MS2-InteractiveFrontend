@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap');
+
+/* Rem-compliant site-wide font styling*/
+
+html { 
+    font-size: 62.5%; /* 10px */
+}
+
+/* General site-wide styling */
+
+body {
+    font-family: "Roboto Mono", sans-serif; /* Site-wide font with fall-back */
+}
+
+#bg-img{
+    background-image: url("../images/aprilhaxan-bg.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Relevant ONLY to language-selector index.html in root folder */
+
+.index-headers{
+    margin-top: 15%;
+}
+
+.language-choice{
+    margin-top: 10%;
+}
+
+#index-intro-container{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    text-align: center;
+}
+
+#index-intro-container a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* NavBar site-wide styles */
+
+#navbar-styles{
+    font-size: 1.25rem;
+}
+
+#navbar-styles a{
+    color: #000000;
+    text-decoration: none;
+}
+
+/* start.html specific styles */
+
+.content-wrapper{
+    margin: auto;
+    margin-top: 5%;
+    padding: 2.5%;
+    width: 100%;
+    height: 100%;
+}
+
+.portrait-img{
+    border-radius: 5px;
+    max-width: 180px;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+}
