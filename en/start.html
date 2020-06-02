@@ -19,8 +19,6 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- My CSS -->
   <link rel="stylesheet" href="../assets/css/styles.css">
-<!-- My JavaScript -->
-<script type="javascript" src="../assets/js/main.js"></script>
 </head>
 
 <body id="bg-img">
@@ -61,6 +59,9 @@
     <div class="row content-wrapper bg-light">
       <div class="col-md-3 col-sm-12">
         <img class="portrait-img" src="../assets/images/Majgull_axelsson_portrait.jpg">
+        <br>
+        <br>
+        <p>Majgull Axelsson is an author, lecturer and journalist from Sweden. Her books have been translated into over twenty languages. Amongst the awards she's received for her work is Augustpriset (1997), BMF-Plaketten (1997, 2014) and the Ivar Lo award (2015).</p>
       </div>
       <div class="col-md-6 col-sm-12">
         <h1>Welcome to Majgull Axelssons official site!</h1>
@@ -78,7 +79,7 @@
       <div class="col-md-3 col-sm-12">
         <h2>Upcoming events:</h2><br>
         <p>(Please note, event-descriptions are usually listed in Swedish.)</p>
-        <p id="calendar-events">Temporary placeholder, will populate with data from Google Calendar API.</p>
+        <span id="calendar-events"><p>Temporary placeholder, will populate with data from Google Calendar API.</p></span>
       </div>
 
 
@@ -87,6 +88,11 @@
   </div>
 
 
-</body>
+  <!-- My JavaScript -->
+  <script src="../assets/js/main.js"></script>
+  <!-- Config.js not included as it contains protected data (API-keys etc), available for review on request. -->
+  <script src="../assets/js/config.js"></script>
+  <script src="../assets/js/loadCalEvents.js"></script>
+  </body>
 
 </html>

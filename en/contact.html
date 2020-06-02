@@ -14,13 +14,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
+    
+    <!-- config.js not included in Git submission for safety reasons, it contains API keys and other sensitive data. Available for review on request. -->
+    <script src="../assets/js/config.js"></script>
+
+
+    <!--  EmailJS code below this point! -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        var EmailAPI = config.EmailJSKey;
+
+        (function () {
+            emailjs.init(EmailAPI);
+        })();
+    </script>
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- My CSS -->
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <!-- My JavaScript -->
-    <script type="javascript" src="../assets/js/main.js"></script>
 </head>
 
 <body id="bg-img">
@@ -61,35 +75,47 @@
     <div class="container">
         <div class="row content-wrapper bg-light">
             <div class="col-md-3 col-sm-12">
-                <h3>Contact information:</h3><br>
-                <p>If you'd like to contact Majgull, you can use this form. Majgull has chosen to not have a social media presence, although the webmaster of this site maintains her Goodreads account. All emails will be forwarded to Majgull, who will try to respond to as many inquiries as she can.</p>
+                <h3>Contact information:</h3>
+                <br>
+                <br>
+                <p>If you'd like to contact Majgull, you can use this form. Majgull has chosen to not have a social
+                    media presence, although the webmaster of this site maintains her Goodreads account. All emails will
+                    be forwarded to Majgull, who will try to respond to as many inquiries as she can.</p>
             </div>
             <div class="col-md-9 col-sm-12">
                 <h1>Contact form: </h1><br>
-                <form form="maContactSheet" class="form-horizontal">
-                    
+                <form id="maContactSheet" class="form-horizontal">
+                    <label for="inputSubject">Subject: </label>
+                    <br>
+                    <input type="text" class="form-control" name="inputSubject" placeholder="Reason for contacting Majgull">
+                    <br>
                     <label for="inputEmail">Please enter your full name: </label>
                     <br>
-                    <input type="text" class="form-control" id="inputFullName" placeholder="Enter your full name..."><br>
+                    <input type="text" class="form-control" name="inputFullName"
+                        placeholder="Enter your full name..."><br>
                     <label for="inputEmail">Please enter your email-address: </label>
                     <br>
-                    <input type="email" class="form-control" id="inputEmail" placeholder="example@adress.com" aria-describedby="emailHelp"><br>
-                    <small id="emailHelp" class="form-text text-muted" style="display: none;">Please enter the adress you'd like the reply sent to.</small>
+                    <input type="email" class="form-control" name="inputEmail" placeholder="example@adress.com"
+                        aria-describedby="emailHelp"><br>
+                    <small id="emailHelp" class="form-text text-muted" style="display: none;">Please enter the adress
+                        you'd like the reply sent to.</small>
                     <label for="inputText">Please enter your message (Max 500 characters.)</label>
                     <br>
-                    <input type="textarea" class="form-control" maxlength="500" placeholder="Enter your message here (500max)...">
+                    <input type="textarea" class="form-control" maxlength="500" name="inputMessage"
+                        placeholder="Enter your message here (500max)...">
                     <br>
-                    <input type="submit" class="btn btn-primary" value="Submit button">
+                    <input type="submit" class="btn btn-primary" value="Send" id="formSubmit">
                 </form>
-
-            </div>  
-
-
+            </div>
         </div>
-
     </div>
 
-<!-- Add EmailJS code below this point! -->
+
+    <!-- My JavaScript -->
+    
+    <script src="../assets/js/main.js"></script>
+    <script type="text/javascript" src="../assets/js/sendMail.js"></script>
+
 
 </body>
 

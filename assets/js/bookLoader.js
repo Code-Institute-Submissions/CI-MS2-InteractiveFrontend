@@ -1,22 +1,17 @@
 $(document).ready(function () {
 
-    console.log("Script loaded!");
-
     $("#btn-april-en").click(function () {
-        
-          
-        console.log("Confirm click!");
-        
+                  
     
-          $.getJSON("../assets/js/bookLoader.js", function (data, status) {
+          $.getJSON("../assets/js/books.json", function (data, status) {
+
+            // Remove the console logs before final submission, currently in for debugging reasons
 
             console.log(data);
-            console.log(status);
+            console.log(status); 
     
-            $("#img-container").html("<img src=" + data.aprilWitchEn.coverIMG + ">");
+            $("#img-container").html("<img src="+data.aprilWitchEn.coverIMG+">");
             $("#title-en").html("h3>Title: ")+data.aprilWitchEn.title+"</h3>"
           });
-
     });
-
 });
