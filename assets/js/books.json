@@ -1,12 +1,132 @@
 {
-    "aprilWitchEn": {
-        "title": "April Witch",
-        "published": "1997",
-        "coverIMG": "../assets/images/books/omslag_aprilhaxan.jpg"
-    },
-    "rosarioEn": {
-        "title": "Rosario is dead",
-        "published": "1989",
-        "coverIMG": "../assets/images/books/omslag_rosario.jpg"
+    "en": {
+        "aprilWitchEn": {
+            "title": "April Witch",
+            "isbn": "978-0375505171",
+            "published": "1997",
+            "coverIMG": "../assets/images/books/omslag_aprilhaxan.jpg",
+            "quote": "“(A) ferocious, spellbinding story… completely mesmerizing (…) April Witch will possess you and make you see the world with different eyes.”  - The Washington Post"
+        },
+        "rosarioEn": {
+            "title": "Rosario is dead",
+            "isbn": "9789155037963",
+            "published": "1989",
+            "coverIMG": "../assets/images/books/omslag_rosario.jpg",
+            "quote": "In this documentary-novel, Majgull Axelsson tells Rosario Baluyots story. She died at age 11, having lived in the streets of Olongapo in the Philippines until she died the victim of the ruthless sex-tourism industry."
+        },
+        "denJagAldrigVarEn": {
+            "title": "The Woman I Never Was",
+            "isbn": "9789100653439",
+            "published": "2004",
+            "coverIMG": "../assets/images/books/omslag_denjagaldrigvar.jpg",
+            "quote": "”The Woman I Never Was is on one of its many planes a mercilessly cruel generational novel (...) Majgull Axelsson writes with unrelenting bleakness and consequence” – Expressen"
+        },
+        "dittLivOchMittEn": {
+            "title": "Your life and mine",
+            "isbn": "9789173378475",
+            "published": "2017",
+            "coverIMG": "../assets/images/books/omslag_ditt_liv.jpg",
+            "quote": "This is an authors work that has since its debut been in the service of the weak (...) We need her voice more today than ever before. - Svenska Dagbladet"
+        },
+        "isOchVattenEn": {
+            "title": "Ice and Water, Water and Ice",
+            "isbn": "9789113018362",
+            "published": "2008",
+            "coverIMG": "../assets/images/books/omslag_isochvatten.jpg",
+            "quote": "... one of contemporary Swedish literatures sharpest decpiter of the everyday, families, class and their interactions. - Dagens Nyheter"
+        },
+        "moderspassionEn": {
+            "title": "Mother's Passion",
+            "isbn": "9789173372961",
+            "published": "2011",
+            "coverIMG": "../assets/images/books/omslag_moderspassion.jpg",
+            "quote": "... One of our greatest storytellers - Vi magazine"
+        },
+        "miriamEn": {
+            "title": "My Name Is Not Miriam(Jag heter inte Miriam)",
+            "isbn": "9789173376983",
+            "published": "2014",
+            "coverIMG": "../assets/images/books/omslag_miriam.jpg",
+            "quote": "A story that bears repeating, again and again. Majgull Axelsson does it honor. - Svenska Dagbladet"
+        },
+        "slumpvandringEn": {
+            "title": "Random House",
+            "isbn": "9789173376907",
+            "published": "2000",
+            "coverIMG": "../assets/images/books/omslag_slumpvandring.jpg",
+            "quote": "Random House is a book that you read from cover to cover - Nerikes Allehanda"
+        },
+        "nifelheimEn": {
+            "title": "Far away from Nifelheim",
+            "isbn": "9789173373319",
+            "published": "1994",
+            "coverIMG": "../assets/images/books/omslag_nifelheim.jpg",
+            "quote": "Seldom if ever has a book touched me more strongly than Majgull Axelssons debutnovel, Far Away from Nifelheim. It is straight, naked and honest. - UNT"
+        },
+        "sv": {
+            "aprilWitchSV": {
+                "title": "April Witch (Aprilhäxan)",
+                "isbn": "",
+                "published": "1997",
+                "coverIMG": "../assets/images/books/omslag_aprilhaxan.jpg",
+                "quote": ""
+            },
+            "rosarioSV": {
+                "title": "Rosario is dead (Rosario är död)",
+                "isbn": "",
+                "published": "1989",
+                "coverIMG": "../assets/images/books/omslag_rosario.jpg",
+                "quote": ""
+            },
+            "denJagAldrigVarSV": {
+                "title": "The Woman I Never Was (Den jag aldrig var)",
+                "isbn": "",
+                "published": "2004",
+                "coverIMG": "../assets/images/books/omslag_denjagaldrigvar.jpg",
+                "quote": ""
+            },
+            "dittLivOchMittSV": {
+                "title": "Your life and mine (Ditt liv och mitt )",
+                "isbn": "",
+                "published": "2017",
+                "coverIMG": "../assets/images/books/omslag_ditt_liv.jpg",
+                "quote": ""
+            },
+            "isOchVattenSV": {
+                "title": "Ice and Water, Water and Ice (Is och vatten, vatten och is)",
+                "isbn": "",
+                "published": "2008",
+                "coverIMG": "../assets/images/books/omgslag_isochvatten.jpg",
+                "quote": ""
+            },
+            "moderspassionSV": {
+                "title": "Mother's Passion (Moderspassion)",
+                "isbn": "",
+                "published": "2011",
+                "coverIMG": "../assets/images/books/omslag_isochvatten.jpg",
+                "quote": ""
+            },
+            "miriamSV": {
+                "title": "My Name Is Not Miriam(Jag heter inte Miriam)",
+                "isbn": "",
+                "published": "2014",
+                "coverIMG": "",
+                "quote": ""
+            },
+            "slumpvandringSV": {
+                "title": "Random House (Slumpvandring)",
+                "isbn": "",
+                "published": "2000",
+                "coverIMG": "",
+                "quote": ""
+            },
+            "nifelheimSV": {
+                "title": "Far away from Nifelheim (Långt borta från Nifelheim)",
+                "isbn": "",
+                "published": "1994",
+                "coverIMG": "",
+                "quote": ""
+            }
+        }
     }
 }

@@ -69,3 +69,9 @@ body {
     height: auto;
     margin: auto;
 }
+
+/* books.html specific styles */
+
+#book-data{
+    margin: 2.5%;
+}

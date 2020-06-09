@@ -13,5 +13,11 @@ $('#maContactSheet').on('submit', function (event) {
         data: formData,
         contentType: false, // auto-detection
         processData: false // no need to parse formData to string
+    }).done(function () {
+        // Simple confirmation message.
+        $("#mail-confirm").hide().html("Your mail has been sent!").fadeIn(200);
+    }).fail(function (error) {
+        // Error message incl. error code.
+        $("#mail-confirm").hide().html("An error has occured! Error code: " + JSON.stringify("error")).fadeIn(200);
     });
 });

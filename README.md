@@ -9,8 +9,15 @@ Contact sheet on contact.html is not yet integrated with EmailJS service and is 
 
 Problems executing bookLoader.js in contact.html when it is called as an external file.
 
-#### Updates (6/1/2020)
+#### Updates (1/5/2020)
 
 Contact.html is now fully functional. Will add confirmation dialogue soon.
 
-bookLoader.js is now functional. It wasn't executing properly due to having "javascript" as its type.
+bookLoader.js is now functional. It wasn't executing properly due to having "javascript" as its type in the html element.
+
+#### Updates (9/6/2020)
+
+Contact.html now confirms succesful sends and errors as intended.
+
+Finished data-entry for books.json and finished bookLoader.js and /en/books.html to make it fully functional as intended, including animations. It unfortunately meant this commit was quite large, but the majority of those changes are adding image-assets.
+
