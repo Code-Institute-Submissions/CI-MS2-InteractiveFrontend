@@ -15,9 +15,9 @@ $('#maContactSheet').on('submit', function (event) {
         processData: false // no need to parse formData to string
     }).done(function () {
         // Simple confirmation message.
-        $("#mail-confirm").hide().html("Your mail has been sent!").fadeIn(200);
+        $("#mail-confirm").html("<h2>Your mail has been sent!</h2>");
     }).fail(function (error) {
         // Error message incl. error code.
-        $("#mail-confirm").hide().html("An error has occured! Error code: " + JSON.stringify("error")).fadeIn(200);
+        $("#mail-confirm").html("<h2>An error has occured! Error code: " + JSON.stringify(error)+"</h2>");
     });
 });
