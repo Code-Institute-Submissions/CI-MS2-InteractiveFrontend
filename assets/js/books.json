@@ -65,63 +65,63 @@
         },
         "sv": {
             "aprilWitchSV": {
-                "title": "April Witch (Aprilhäxan)",
+                "title": "Aprilhäxan",
                 "isbn": "",
                 "published": "1997",
                 "coverIMG": "../assets/images/books/omslag_aprilhaxan.jpg",
                 "quote": ""
             },
             "rosarioSV": {
-                "title": "Rosario is dead (Rosario är död)",
+                "title": "Rosario är död",
                 "isbn": "",
                 "published": "1989",
                 "coverIMG": "../assets/images/books/omslag_rosario.jpg",
                 "quote": ""
             },
             "denJagAldrigVarSV": {
-                "title": "The Woman I Never Was (Den jag aldrig var)",
+                "title": "Den jag aldrig var",
                 "isbn": "",
                 "published": "2004",
                 "coverIMG": "../assets/images/books/omslag_denjagaldrigvar.jpg",
                 "quote": ""
             },
             "dittLivOchMittSV": {
-                "title": "Your life and mine (Ditt liv och mitt )",
+                "title": "Ditt liv och mitt",
                 "isbn": "",
                 "published": "2017",
                 "coverIMG": "../assets/images/books/omslag_ditt_liv.jpg",
                 "quote": ""
             },
             "isOchVattenSV": {
-                "title": "Ice and Water, Water and Ice (Is och vatten, vatten och is)",
+                "title": "Is och vatten, vatten och is",
                 "isbn": "",
                 "published": "2008",
                 "coverIMG": "../assets/images/books/omgslag_isochvatten.jpg",
                 "quote": ""
             },
             "moderspassionSV": {
-                "title": "Mother's Passion (Moderspassion)",
+                "title": "Moderspassion",
                 "isbn": "",
                 "published": "2011",
                 "coverIMG": "../assets/images/books/omslag_isochvatten.jpg",
                 "quote": ""
             },
             "miriamSV": {
-                "title": "My Name Is Not Miriam(Jag heter inte Miriam)",
+                "title": "Jag heter inte Miriam",
                 "isbn": "",
                 "published": "2014",
                 "coverIMG": "",
                 "quote": ""
             },
             "slumpvandringSV": {
-                "title": "Random House (Slumpvandring)",
+                "title": "Slumpvandring",
                 "isbn": "",
                 "published": "2000",
                 "coverIMG": "",
                 "quote": ""
             },
             "nifelheimSV": {
-                "title": "Far away from Nifelheim (Långt borta från Nifelheim)",
+                "title": "Långt borta från Nifelheim",
                 "isbn": "",
                 "published": "1994",
                 "coverIMG": "",

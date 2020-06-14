@@ -21,3 +21,7 @@ Contact.html now confirms succesful sends and errors as intended.
 
 Finished data-entry for books.json and finished bookLoader.js and /en/books.html to make it fully functional as intended, including animations. It unfortunately meant this commit was quite large, but the majority of those changes are adding image-assets.
 
+#### Updates (10/6/2020):
+
+Wrote and prototyped loadCalEvents.js, which calls on event resources from Google Calendar.
+

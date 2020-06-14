@@ -58,7 +58,7 @@ body {
 .content-wrapper{
     margin: auto;
     margin-top: 5%;
-    padding: 2.5%;
+    padding: 1%;
     width: 100%;
     height: 100%;
 }
@@ -71,6 +71,11 @@ body {
 }
 
 /* books.html specific styles */
+#books-navtab{
+    margin: auto;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
 
 #book-data{
     margin: 2.5%;
