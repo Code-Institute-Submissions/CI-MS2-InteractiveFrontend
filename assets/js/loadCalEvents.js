@@ -27,7 +27,7 @@ $(document).ready(function () {
             $.getJSON(path + val.id, { key: API_KEY }, function (eventData) {
 
                 // Each item iterated over creates a child-element of the #calendar-events div-element, with data from the API.
-                $("#calendar-events").append("<h4><i class='far fa-calendar-check'></i></h4> " + eventData.start.dateTime + "<br><h5>Description: " + eventData.description + "<br>Location: " + eventData.location + "<br><a href=" + eventData.htmlLink + " target='_blank'>Click to see this event in the calendar!</a></h5>");
+                $("#calendar-events").append("<span style='border:1px;><h4><i class='far fa-calendar-check'></i></h4> " + eventData.start.dateTime + "<br><h5>Description: " + eventData.description + "<br>Location: " + eventData.location + "<br><a href=" + eventData.htmlLink + " target='_blank'>Click to see this event in the calendar!</a></h5></span>");
 
             });
         });

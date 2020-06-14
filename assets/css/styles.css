@@ -10,6 +10,7 @@ html {
 
 body {
     font-family: "Roboto Mono", sans-serif; /* Site-wide font with fall-back */
+    font-size: 1.25rem;
 }
 
 #bg-img{
@@ -18,6 +19,24 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+.image-wrap{ /* Styling for image-wrapper, useful on multiple pages */
+    float: left;
+    max-width: 40%;
+    height: auto;
+    padding-right: 3.5%;
+    padding-bottom: 3.5%;
+}
+.left-col-style{ /* Styling the content of the left-hand bootstrap grid cols */
+    max-width: 90%;
+    padding: 1%;
+}
+.center-col-style{ /* Styling the content of the cent bootstrap grid col */
+    
+    max-width: 90%;
+    padding: 1%;
+    
+}
+
 
 /* Relevant ONLY to language-selector index.html in root folder */
 
@@ -42,6 +61,7 @@ body {
     text-decoration: none;
 }
 
+
 /* NavBar site-wide styles */
 
 #navbar-styles{
@@ -56,27 +76,35 @@ body {
 /* start.html specific styles */
 
 .content-wrapper{
-    margin: auto;
-    margin-top: 5%;
+    margin: 5%;
     padding: 1%;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
 }
+.portrait-img{ 
 
-.portrait-img{
-    
-    max-width: 100%;
+    max-width: 90%;
+    padding: 1%;
     height: auto;
     margin: auto;
 }
 
+
+
 /* books.html specific styles */
+
 #books-navtab{
-    margin: auto;
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    max-width: 70%;
 }
 
 #book-data{
+    padding: 5%;
     margin: 2.5%;
+}
+.btn-book-style{
+    padding: 0.5rem;
+    border: 1px;
+
 }
