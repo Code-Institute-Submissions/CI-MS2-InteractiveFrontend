@@ -97,6 +97,6 @@ $(document).ready(function () {
       $("#published").hide().html("<h5>Year of publication: " + data.en.isOchVattenEn.published + "</h5>").fadeIn(400);
       $("#quote").hide().html("<h5>Quote: " + data.en.isOchVattenEn.quote + "</h5>").fadeIn(400);
    
-  });
+  })
 });
 });

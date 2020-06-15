@@ -1,3 +1,5 @@
+// This script handles the EmailJS API as well as error handling for the same.
+
 // Passing the key from config.JS as a variable
 
 $('#maContactSheet').on('submit', function (event) {
