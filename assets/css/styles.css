@@ -44,6 +44,12 @@ body {
     
 }
 
+.right-col-style{
+    
+    max-width: 95%;
+    padding: 1%;
+    
+}
 
 /* Relevant ONLY to language-selector index.html in root folder */
 
@@ -71,9 +77,13 @@ body {
 
 /* NavBar site-wide styles */
 
+.nav-link{
+    padding: 10px;
+}
+
 #navbar-styles{
-    height: 5vh;
     font-size: 1.25rem;
+    padding: 12px;
 }
 
 #navbar-styles a{
@@ -117,6 +127,7 @@ body {
     border: 1px;
 
 }
+
 
 /* Media-query CSS for smaller screen-sizes */
 

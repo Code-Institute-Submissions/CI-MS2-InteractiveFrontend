@@ -10,14 +10,22 @@ $(document).ready(function () {
     $(".nav-link").mouseover(function () {
 
 
-        $(this).animate({ fontSize: "1.75rem" }, 200);
+        $(this).animate({
+            fontSize: "1.5rem",
+            paddingTop: "0%",
+            paddingBottom: "0%",
+            paddingLeft: "25px",
+            paddingRight: "25px",
+        }, 200);
 
-        $(this).mouseout(function(){
+        $(this).mouseout(function () {
 
-            $(this).animate({ fontSize: "1.25rem" }, 200);
+            $(this).animate({ 
+            fontSize: "1.25rem", 
+            padding: "10px"
+        }, 200);
 
         });
-  
-   });
 
+    });
 });
