@@ -106,8 +106,10 @@ body {
     height: auto;
     margin: auto;
 }
-
-
+#event-legend{
+    border: 2px;
+    border-style: solid;
+}
 
 /* books.html specific styles */
 

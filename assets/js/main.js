@@ -20,12 +20,35 @@ $(document).ready(function () {
 
         $(this).mouseout(function () {
 
-            $(this).animate({ 
-            fontSize: "1.25rem", 
-            padding: "10px"
-        }, 200);
+            $(this).animate({
+                fontSize: "1.25rem",
+                padding: "10px"
+            }, 200);
 
         });
 
+    });
+
+    // start.html animations on event-links. Does not trigger properly on server. 
+
+    $(".event-link").mouseover(function () {
+
+        $(this).animate({
+            textColor: "#de3535;",
+            fontSize: "1.5rem",
+        }, 200);
+
+        //Debugging message for console
+        console.log("MouseOver triggered!");
+
+        $(this).mouseout(function () {
+
+            $(this).animate({
+                fontSize: "1.25rem",
+                textColor: "#000000"
+            }, 200);
+            //Debugging message for console
+            console.log("MouseOver triggered!");
+        });
     });
 });

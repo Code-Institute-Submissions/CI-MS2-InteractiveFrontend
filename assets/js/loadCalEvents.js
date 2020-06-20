@@ -26,8 +26,19 @@ $(document).ready(function () {
             // Using the Google Calendar "Event Get" format to get more detailed data to be used in updating the calendar segment of the site.
             $.getJSON(path + val.id, { key: API_KEY }, function (eventData) {
 
+                // Creating a usable URI for Google Maps integration
+                var gMapsLink =  encodeURIComponent(eventData.location);
+                var GMapsURI = "https://www.google.com/maps/dir/?api=1&destination=";
+                
+                console.log(GMapsURI+gMapsLink);
+
+                // Google Calendar API Returns ISO timestamps, converting them into something more readable.
+                var eventDatetime = new Date(eventData.start.dateTime);
+                var dateString = eventDatetime.toLocaleDateString('sv-SE');
+                var timeString = eventDatetime.toLocaleTimeString('sv-SE')
+
                 // Each item iterated over creates a child-element of the #calendar-events div-element, with data from the API.
-                $("#calendar-events").append("<span style='border:1px;><h4><i class='far fa-calendar-check'></i></h4> " + eventData.start.dateTime + "<br><h5>Description: " + eventData.description + "<br>Location: " + eventData.location + "<br><a href=" + eventData.htmlLink + " target='_blank'>Click to see this event in the calendar!</a></h5></span>");
+                $("#calendar-events").append("<span style='border:1px;'>Description: " + eventData.description + "<br><i class='fas fa-clock'></i>:  " + dateString + " " + timeString+ "<br><a target='_blank' href="+GMapsURI+gMapsLink+"><i class='fas fa-map-marker' class ='event-link'></i>: "+eventData.location + "<br><br><a href=" + eventData.htmlLink + " target='_blank' class ='event-link'><i class='far fa-calendar-check'></i>: See event in calendar!</a></span><br>");
 
             });
         });
