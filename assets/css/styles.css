@@ -38,10 +38,23 @@ body {
     padding: 1%;
 }
 .center-col-style{ /* Styling the content of the center bootstrap grid col */
-    
+   
     max-width: 90%;
     padding: 1%;
-    
+   
+}
+.flag-icon-wrapper{
+
+    max-width: 65px;
+    height: auto;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    opacity: 0.5;
+}
+.flag-toggle-icon{
+    width: 100%;
+    height: auto;
 }
 
 .right-col-style{
@@ -142,4 +155,22 @@ body {
         height: auto;
         margin: auto;
     }
-}
+    /* Styling links on smaller screens, to make them more visible. */
+    a {
+        text-decoration: underline;
+        color: #ff0000;
+    } 
+    .flag-icon-wrapper{
+
+        max-width: 35px;
+        height: auto;
+        position: fixed;
+        right: 5px;
+        bottom: 10px;
+        border-radius: 50%;
+    }
+    .flag-toggle-icon{
+        width: 100%;
+        height: auto;
+    }
+} 

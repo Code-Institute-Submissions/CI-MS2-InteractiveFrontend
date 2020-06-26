@@ -36,7 +36,7 @@ $(document).ready(function () {
                 var timeString = eventDatetime.toLocaleTimeString('sv-SE')
 
                 // Each item iterated over creates a child-element of the #calendar-events div-element, with data from the API.
-                $("#calendar-events").append("<span style='border:1px;'>Description: " + eventData.description + "<br><br><i class='fas fa-clock'></i>:  " + dateString + " " + timeString+ "<br><a target='_blank' href="+GMapsURI+gMapsLink+"><i class='fas fa-map-marker' class ='event-link'></i>: "+eventData.location + "<br><br><a href=" + eventData.htmlLink + " target='_blank' class ='event-link'><i class='far fa-calendar-check'></i>: See event in calendar!</a><br></span>");
+                $("#calendar-events").append("<span style='border:1px;'>Description: " + eventData.description + "<br><br><i class='fas fa-clock'></i>:  " + dateString + " " + timeString+ "<br><a target='_blank' href="+GMapsURI+gMapsLink+"  class='event-link'><i class='fas fa-map-marker'></i>: "+eventData.location + "<br><br><a href=" + eventData.htmlLink + " target='_blank' class ='event-link'><i class='far fa-calendar-check'></i>: See event in calendar!</a><br></span>");
 
             });
         });

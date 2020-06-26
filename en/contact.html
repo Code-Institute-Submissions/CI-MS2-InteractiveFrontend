@@ -14,7 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
-    
+
     <!-- config.js not included in Git submission for safety reasons, it contains API keys and other sensitive data. Available for review on request. -->
     <script src="../assets/js/config.js"></script>
 
@@ -58,18 +58,6 @@
                 </li>
             </ul>
         </div>
-
-        <!-- Navbar section for toggling language, TODO: update on each html so the href is correct for that page -->
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link mr-4" href="../sv/start.html"><img
-                        src="../assets/images/icons/sweden-flag-icon-16.png"></a>
-            </li>
-            <li class="nav-item mr-4">
-                <a class="nav-link" href="../en/start.html"><img
-                        src="../assets/images/icons/united-kingdom-flag-icon-16.png"></a>
-            </li>
-        </ul>
     </nav>
 
     <div class="container">
@@ -85,18 +73,19 @@
             <div class="col-lg-9 col-md-12 center-col-style">
                 <h1>Contact form: </h1><br>
                 <form id="maContactSheet" class="form-horizontal">
-                    <label for="inputSubject" >Subject: </label>
+                    <label for="inputSubject">Subject: </label>
                     <br>
-                    <input type="text" class="form-control" name="inputSubject" placeholder="Subject... (required)" required>
+                    <input type="text" class="form-control" name="inputSubject" placeholder="Subject... (required)"
+                        required>
                     <br>
                     <label for="inputEmail">Please enter your full name: </label>
                     <br>
                     <input type="text" class="form-control" name="inputFullName"
                         placeholder="Enter your full name..."><br>
-                    <label for="inputEmail" >Please enter your email-address: </label>
+                    <label for="inputEmail">Please enter your email-address: </label>
                     <br>
-                    <input type="email" class="form-control" name="inputEmail" placeholder="example@adress.com (required)"
-                        aria-describedby="emailHelp" required><br>
+                    <input type="email" class="form-control" name="inputEmail"
+                        placeholder="example@adress.com (required)" aria-describedby="emailHelp" required><br>
                     <small id="emailHelp" class="form-text text-muted" style="display: none;">Please enter the adress
                         you'd like the reply sent to.</small>
                     <label for="inputText">Please enter your message (Max 500 characters.)</label>
@@ -110,11 +99,15 @@
                 <h2 id="mail-confirm"></h2>
             </div>
         </div>
+        <!-- Language toggling link -->
+        <div class="flag-icon-wrapper">
+            <a href="../sv/contact.html"><img src="../assets/images/icons/lang-token-en.png" class="flag-toggle-icon"></a>
+        </div>
     </div>
 
 
     <!-- My JavaScript -->
-    
+
     <script src="../assets/js/main.js"></script>
     <script type="text/javascript" src="../assets/js/sendMail.js"></script>
 
