@@ -85,7 +85,19 @@ I then went to the API dashboards for google and EmailJS and entered the URL for
 
 #### 3.2) Installation
 
-To install and run the project, you will require a file named "config.js" inside the "/assets/js/" folder of the project. This file must contain API keys for EmailJS and Google Calendar and Maps API. The latter two must also be activated on your google api [dashboard](https://console.developers.google.com/apis/dashboard?pli=1) and preferably secured further. The current installation hosted at https://patrikaxelsson.one/MS2 is the only allowed URL for the API keys in the project at this time.
+To install and run the project, you will require a file named "config.js" inside the "/assets/js/" folder of the project. This file must contain API keys for EmailJS and Google Calendar and Maps API. The latter two must also be activated on your google api [dashboard](https://console.developers.google.com/apis/dashboard?pli=1) and preferably secured further by setting your google dashboard to only accept calls from certain URLs. 
+
+config.js must contain the following environment variables:
+
+    GCalClient_ID: <Client ID, from the google API dashboard>,
+    GCalAPIKey : <API key from the same>,
+    GcalendarId : <Google Calendar ID, available from the dashboard but generally the email tied to the calendar>,
+    GCalBaseURI : <The URI for your calendar ID in the events section, for more documentation on syntax see: https://developers.google.com/calendar/v3/reference/events >,
+
+    EmailJSKey : <Key for EmailJS, please visit https://www.emailjs.com/ for more details> ,
+    EmailJSAT :  <EmailJS access token, available at https://www.emailjs.com/ >,
+
+
 
 ### 4) Technologies used.
 

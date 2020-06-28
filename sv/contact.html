@@ -1,0 +1,108 @@
+<!-- Swedish language version, only content is affected, code is the same in the /en/ version with the exception of changed file-paths for internal assets.-->
+<!doctype html>
+<html lang="sv">
+
+<head>
+    <title>Majgull Axelsson - Kontaktsida</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--  EmailJS code below this point! -->
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script>
+        var EmailAPI = config.EmailJSKey;
+
+        (function () {
+            emailjs.init(EmailAPI);
+        })();
+    </script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body id="bg-img">
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-sm bg-light navbar-light" id="navbar-styles">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="navbar-nav">
+                <li class="nav-item mr-2">
+                    <a class="nav-link active" href="start.html">Hem</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="contact.html">Kontakt</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="books.html">Böcker</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="about.html">Om sidan</a>
+                </li>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row content-wrapper bg-light">
+            <div class="col-lg-4 col-md-12 left-col-style">
+                <h2>Kontaktinformation:</h2>
+                <br>
+                <br>
+                <p>Om du vill nå Majgull kan du använda detta formulär. Majgull har valt att inte finnas på sociala medier, dock sköter hennes Goodreads-konto. Alla email kommer vidarbefordras till Majgull, som kommer försöka svara på så många mail som hon kan.</p>
+            </div>
+            <div class="col-lg-8 col-md-12 center-col-style">
+                <h2>Kontaktformulär: </h2><br>
+                <form id="maContactSheet" class="form-horizontal">
+                    <label for="inputSubject">Ämne: </label>
+                    <br>
+                    <input type="text" class="form-control" name="inputSubject" placeholder="Ämne... (Obligatoriskt)" required>
+                    <br>
+                    <label for="inputEmail">Namn: </label>
+                    <br>
+                    <input type="text" class="form-control" name="inputFullName"
+                        placeholder="Förnamn Efternamn..."><br>
+                    <label for="inputEmail">Din email: </label>
+                    <br>
+                    <input type="email" class="form-control" name="inputEmail"
+                        placeholder="example@adress.com (Obligatoriskt)" aria-describedby="emailHelp" required><br>
+                    <small id="emailHelp" class="form-text text-muted" style="display: none;">Skriv in den email du vill ha återkoppling till:</small>
+                    <label for="inputText">Vänligen skriv in ditt meddelande här (Max 500 tecken.)</label>
+                    <br>
+                    <input type="textarea" class="form-control" maxlength="500" name="inputMessage"
+                        placeholder="Skriv ditt meddelande här (500max)..." required>
+                    <br>
+                    <input type="submit" class="btn btn-primary" value="Skicka" id="formSubmit">
+                </form>
+                <br>
+                <h2 id="mail-confirm"></h2>
+            </div>
+        </div>
+        <!-- Language toggling link -->
+        <div class="flag-icon-wrapper">
+            <a href="../en/contact.html"><img src="../assets/images/icons/lang-token-sv.png" class="flag-toggle-icon"
+                    alt="Language toggle button"></a>
+        </div>
+    </div>
+
+
+    <!-- My JavaScript -->
+    <script src="../assets/js/main.js"></script>
+    <script type="text/javascript" src="../assets/js/sendMail.js"></script>
+    
+    <!-- config.js not included in Git submission for safety reasons, it contains API keys and other sensitive data. Available for review on request. -->
+    <script src="../assets/js/config.js"></script>
+    
+    <!-- jQuery, Bootstrap etc-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
