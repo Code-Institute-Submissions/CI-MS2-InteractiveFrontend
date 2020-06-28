@@ -78,7 +78,7 @@
             "isbn": "978-0375505171",
             "published": "1997",
             "coverIMG": "../assets/images/books/omslag_aprilhaxan.jpg",
-            "quote": "",
+            "quote": "Obeskrivligt ruskig...och alldeles underbar. - Expressen",
             "goodReadsURL": "https://www.goodreads.com/book/show/285064.April_Witch?from_search=true&from_srp=true&qid=ivt7sVZUc4&rank=2"
         },
         "rosario": {
@@ -86,7 +86,7 @@
             "isbn": "9789155037963",
             "published": "1989",
             "coverIMG": "../assets/images/books/omslag_rosario.jpg",
-            "quote": "",
+            "quote": "I denna dokumentärroman berättar Majgull Axelsson om Rosario Baluyot, som bara var elva år när hon dog. Hon levde som gatubarn i Olongapo i Filippinerna där hon blev offer för den hänsynslösa sexturismen.",
             "goodReadsURL":"https://www.goodreads.com/book/show/1571436.Rosario_is_Dead?from_search=true&from_srp=true&qid=ivt7sVZUc4&rank=4"
         },
         "denJagAldrigVar": {
@@ -94,7 +94,7 @@
             "isbn": "9789100653439",
             "published": "2004",
             "coverIMG": "../assets/images/books/omslag_denjagaldrigvar.jpg",
-            "quote": "",
+            "quote": "”Den jag aldrig var är framför allt ett laddat psykologiskt drama om identitet och valmöjligheter, skuld och förlåtelse, vänskap och svek … Frågan om vem MaryMarie egentligen är och vad som inträffat håller spänningen uppe och skapar ett närmast thrillerartat driv.” – Helsingborgs Dagblad",
             "goodReadsURL":"https://www.goodreads.com/book/show/2283597.Den_jag_aldrig_var?from_search=true&from_srp=true&qid=ivt7sVZUc4&rank=8"
         },
         "dittLivOchMitt": {
@@ -102,7 +102,7 @@
             "isbn": "9789173378475",
             "published": "2017",
             "coverIMG": "../assets/images/books/omslag_ditt_liv.jpg",
-            "quote": "",
+            "quote": "Det här är ett författarskap som ända sedan debuten ställt sig i de svagas tjänst. (…) Vi behöver hennes röst mer än någonsin idag. – Svenska Dagbladet",
             "goodReadsURL": "https://www.goodreads.com/book/show/34669363-ditt-liv-och-mitt?from_search=true&from_srp=true&qid=ivt7sVZUc4&rank=3"
         },
         "isOchVatten": {
@@ -110,7 +110,7 @@
             "isbn": "9789113018362",
             "published": "2008",
             "coverIMG": "../assets/images/books/omslag_isochvatten.jpg",
-            "quote": "",
+            "quote": "… Axelsson är Sveriges Joyce Carol Oates … – M-Magasin",
             "goodReadsURL": "https://www.goodreads.com/book/show/7742340-is-och-vatten-vatten-och-is?from_search=true&from_srp=true&qid=ivt7sVZUc4&rank=7"
         },
         "moderspassion": {
@@ -118,7 +118,7 @@
             "isbn": "9789173372961",
             "published": "2011",
             "coverIMG": "../assets/images/books/omslag_moderspassion.jpg",
-            "quote": "",
+            "quote": "… en av våra allra bästa berättare. - Tidningen Vi",
             "goodReadsURL": "https://www.goodreads.com/book/show/12981262-moderspassion?from_search=true&from_srp=true&qid=ivt7sVZUc4&rank=5"
         },
         "miriam": {
@@ -126,7 +126,7 @@
             "isbn": "9789173376983",
             "published": "2014",
             "coverIMG": "../assets/images/books/omslag_miriam.jpg",
-            "quote": "",
+            "quote": "Om detta må vi berätta. Gång på gång. Majgull Axelsson gör det med den äran. - Svenska Dagbladet.",
             "goodReadsURL": "https://www.goodreads.com/book/show/20346092-jag-heter-inte-miriam?from_search=true&from_srp=true&qid=ivt7sVZUc4&rank=1"
         },
         "slumpvandring": {
@@ -134,7 +134,7 @@
             "isbn": "9789173376907",
             "published": "2000",
             "coverIMG": "../assets/images/books/omslag_slumpvandring.jpg",
-            "quote": "",
+            "quote": "Slumpvandring är en bok som man sträckläser. – Nerikes Allehanda",
             "goodReadsURL": "https://www.goodreads.com/book/show/1143019.Slumpvandring?from_search=true&from_srp=true&qid=ivt7sVZUc4&rank=6"
         },
         "nifelheim": {
@@ -142,7 +142,7 @@
             "isbn": "9789173373319",
             "published": "1994",
             "coverIMG": "../assets/images/books/omslag_nifelheim.jpg",
-            "quote": "",
+            "quote": "Detta är berättelsen om Cecilia, en 42-årig svensk diplomat, som har kommit hem från Filippinerna efter att ha varit försvunnen i ett vulkandrabbat område. Fysiskt är hon oskadd, men hon befinner sig i ett kristillstånd som hon strängt kontrollerar genom att ägna sig åt sin döende mor.",
             "goodReadsURL": "https://www.goodreads.com/book/show/2998909-l-ngt-borta-fr-n-nifelheim?from_search=true&from_srp=true&qid=ivt7sVZUc4&rank=9"
         }
     }
