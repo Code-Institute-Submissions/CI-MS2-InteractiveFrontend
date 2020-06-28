@@ -34,7 +34,7 @@ body {
     padding: 2.5%;
 }
 .left-col-style{ /* Styling the content of the left-hand bootstrap grid cols */
-    max-width: 95%;
+    max-width: 100%;
     padding: 1%;
 }
 .center-col-style{ /* Styling the content of the center bootstrap grid col */
@@ -42,6 +42,12 @@ body {
     max-width: 90%;
     padding: 1%;
    
+}
+.right-col-style{
+    
+    max-width: 100%;
+    padding: 1%;
+    
 }
 .flag-icon-wrapper{
 
@@ -57,12 +63,7 @@ body {
     height: auto;
 }
 
-.right-col-style{
-    
-    max-width: 95%;
-    padding: 1%;
-    
-}
+
 
 /* Relevant ONLY to language-selector index.html in root folder */
 
@@ -75,7 +76,8 @@ body {
 }
 
 #index-intro-container{
-    height: 100vh;
+    font-size: 1.5rem;
+    min-height: 100vh;
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.6);
     color: #ffffff;
@@ -173,4 +175,4 @@ body {
         width: 100%;
         height: auto;
     }
-} 
+}

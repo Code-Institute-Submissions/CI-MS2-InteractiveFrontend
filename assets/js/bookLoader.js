@@ -106,5 +106,7 @@ $(document).ready(function () {
       $("#goodreads").hide().html("<a href='"+ data.en.isOchVattenEn.goodReadsURL+"' target='_blank'><img src='../assets/images/icons/goodreads_icon_32x32.png'> Click to see on Goodreads.com</a>").fadeIn(400);
    
   })
+
+  
 });
 });

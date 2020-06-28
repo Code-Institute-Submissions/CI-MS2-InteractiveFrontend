@@ -2,7 +2,7 @@
 
 // Nothing to be executed until the page is fully loaded.
 $(document).ready(function () {
-
+    
     // General fadein effect on all pages.
     $(".content-wrapper").hide().fadeIn(600);
 
@@ -13,23 +13,20 @@ $(document).ready(function () {
         $(this).mouseout(function () {
             $(this).css("text-decoration", "NONE");
         });
-
-
-
-        // start.html animations on event-links. Does not trigger properly on server. 
-
-        $(".event-link").mouseover(function () {
-
-            $(this).css("text-decoration", "underline");
-
-            $(this).mouseout(function () {
-
-                $(this).css("text-decoration", "NONE");
-            });
-        });
-
-        // Language toggler highlighter
     });
+
+    // start.html highlighting of event-links created with loadCalEvents.js
+    $(".event-link").mouseover(function () {
+
+        $(this).css("text-decoration", "underline");
+
+        $(this).mouseout(function () {
+
+            $(this).css("text-decoration", "NONE");
+        });
+    });
+
+    // Language toggler highlighter
 
     $(".flag-icon-wrapper").mouseover(function () {
         $(this).fadeTo(100, 1);

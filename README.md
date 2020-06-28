@@ -55,6 +55,8 @@ Once the scope had narrowed to include EmailJS and two of the google APIs, my se
 
 I involved about fifteen people in testing the page on multiple screens. Each tester was given a small form to fill in, noting the device they were using and any display errors they ran into. A number of changes were implemented after I had gone through the feedback. Cosmetic changes were made primarily to things such as the way links were highlighted, the mouseover event having in earlier designs lead to jerky and jarring animations in the navbar.
 
+Towards the end of the process, a bug was encountered in index.html using responsinator. The RGBA backdrop did not fill the entire background in landscape mode. It was resolved by changing the "height" on the relevant CSS rule that applied the RGBA style to min-height.
+
 ##### 2.2.2) Google Maps
 
 The project only uses Google Maps API in a small way. When registering an event on the google calendar, one can mark the location on a google maps object. This object is also available inside the event-item in the calendar item itself. However, if there is an API call sent to the Google Calendar, the location returned is in the format of a string with the street adress.
