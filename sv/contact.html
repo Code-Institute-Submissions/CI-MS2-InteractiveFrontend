@@ -8,17 +8,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!--  EmailJS code below this point! -->
-
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-    <script>
-        var EmailAPI = config.EmailJSKey;
-
-        (function () {
-            emailjs.init(EmailAPI);
-        })();
-    </script>
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -45,7 +34,6 @@
                 <li class="nav-item mr-2">
                     <a class="nav-link" href="about.html">Om sidan</a>
                 </li>
-                </li>
             </ul>
         </div>
     </nav>
@@ -63,20 +51,20 @@
                 <form id="maContactSheet" class="form-horizontal">
                     <label for="inputSubject">Ämne: </label>
                     <br>
-                    <input type="text" class="form-control" name="inputSubject" placeholder="Ämne... (Obligatoriskt)" required>
+                    <input type="text" class="form-control" id="inputSubject" placeholder="Ämne... (Obligatoriskt)" required>
                     <br>
                     <label for="inputEmail">Namn: </label>
                     <br>
-                    <input type="text" class="form-control" name="inputFullName"
+                    <input type="text" class="form-control" id="inputFullName"
                         placeholder="Förnamn Efternamn..."><br>
                     <label for="inputEmail">Din email: </label>
                     <br>
-                    <input type="email" class="form-control" name="inputEmail"
+                    <input type="email" class="form-control" id="inputEmail"
                         placeholder="example@adress.com (Obligatoriskt)" aria-describedby="emailHelp" required><br>
                     <small id="emailHelp" class="form-text text-muted" style="display: none;">Skriv in den email du vill ha återkoppling till:</small>
-                    <label for="inputText">Vänligen skriv in ditt meddelande här (Max 500 tecken.)</label>
+                    <label for="inputMessage">Vänligen skriv in ditt meddelande här (Max 500 tecken.)</label>
                     <br>
-                    <input type="textarea" class="form-control" maxlength="500" name="inputMessage"
+                    <input type="text" class="form-control" maxlength="500" id="inputMessage"
                         placeholder="Skriv ditt meddelande här (500max)..." required>
                     <br>
                     <input type="submit" class="btn btn-primary" value="Skicka" id="formSubmit">
@@ -91,18 +79,27 @@
                     alt="Language toggle button"></a>
         </div>
     </div>
-
-
-    <!-- My JavaScript -->
-    <script src="../assets/js/main.js"></script>
-    <script type="text/javascript" src="../assets/js/sendMail.js"></script>
-    
-    <!-- config.js not included in Git submission for safety reasons, it contains API keys and other sensitive data. Available for review on request. -->
-    <script src="../assets/js/config.js"></script>
     
     <!-- jQuery, Bootstrap etc-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- My JavaScript -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/sendMail.js"></script>
+    <!-- config.js not included in Git submission for safety reasons, it contains API keys and other sensitive data. Available for review on request. -->
+    <script src="../assets/js/config.js"></script>
+    
+    <!--  EmailJS code below this point! -->
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script>
+        var EmailAPI = config.EmailJSKey;
+
+        (function () {
+            emailjs.init(EmailAPI);
+        })();
+    </script>
 </body>
 </html>

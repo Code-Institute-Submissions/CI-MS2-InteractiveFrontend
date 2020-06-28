@@ -8,28 +8,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
-    <!-- jQuery, Bootstrap etc-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-
-
-    <!-- config.js not included in Git submission for safety reasons, it contains API keys and other sensitive data. Available for review on request. -->
-    <script src="../assets/js/config.js"></script>
-
-
-    <!--  EmailJS code below this point! -->
-
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-    <script type="text/javascript">
-        var EmailAPI = config.EmailJSKey;
-
-        (function () {
-            emailjs.init(EmailAPI);
-        })();
-    </script>
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -75,22 +53,22 @@
                 <form id="maContactSheet" class="form-horizontal">
                     <label for="inputSubject">Subject: </label>
                     <br>
-                    <input type="text" class="form-control" name="inputSubject" placeholder="Subject... (required)"
+                    <input type="text" class="form-control" id="inputSubject" placeholder="Subject... (required)"
                         required>
                     <br>
                     <label for="inputEmail">Please enter your full name: </label>
                     <br>
-                    <input type="text" class="form-control" name="inputFullName"
+                    <input type="text" class="form-control" id="inputFullName"
                         placeholder="Enter your full name..."><br>
                     <label for="inputEmail">Please enter your email-address: </label>
                     <br>
-                    <input type="email" class="form-control" name="inputEmail"
+                    <input type="email" class="form-control" id="inputEmail"
                         placeholder="example@adress.com (required)" aria-describedby="emailHelp" required><br>
                     <small id="emailHelp" class="form-text text-muted" style="display: none;">Please enter the adress
                         you'd like the reply sent to.</small>
-                    <label for="inputText">Please enter your message (Max 500 characters.)</label>
+                    <label for="inputMessage">Please enter your message (Max 500 characters.)</label>
                     <br>
-                    <input type="textarea" class="form-control" maxlength="500" name="inputMessage"
+                    <input type="text" class="form-control" maxlength="500" id="inputMessage"
                         placeholder="Enter your message here (500max), required..." required>
                     <br>
                     <input type="submit" class="btn btn-primary" value="Send" id="formSubmit">
@@ -101,15 +79,36 @@
         </div>
         <!-- Language toggling link -->
         <div class="flag-icon-wrapper">
-            <a href="../sv/contact.html"><img src="../assets/images/icons/lang-token-en.png" class="flag-toggle-icon" alt="Language toggle button"></a>
+            <a href="../sv/contact.html"><img src="../assets/images/icons/lang-token-en.png" class="flag-toggle-icon"
+                    alt="Language toggle button"></a>
         </div>
     </div>
+    <!-- jQuery, Bootstrap etc-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
+    <!-- My JavaScript -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/sendMail.js"></script>
+    <!-- config.js not included in Git submission for safety reasons, it contains API keys and other sensitive data. Available for review on request. -->
+    <script src="../assets/js/config.js"></script>
+
+    <!--  EmailJS code below this point! -->
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script>
+        var EmailAPI = config.EmailJSKey;
+
+        (function () {
+            emailjs.init(EmailAPI);
+        })();
+    </script>
 
     <!-- My JavaScript -->
 
     <script src="../assets/js/main.js"></script>
-    <script type="text/javascript" src="../assets/js/sendMail.js"></script>
+    <script src="../assets/js/sendMail.js"></script>
 
 
 </body>
