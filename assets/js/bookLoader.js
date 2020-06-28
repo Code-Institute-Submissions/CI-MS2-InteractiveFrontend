@@ -10,7 +10,7 @@ $(document).ready(function () {
             $("#title").hide().html("<h1>" + data.en.aprilWitch.title + "</h1>").fadeIn(400);
             $("#isbn").hide().html("<h5>ISBN: " + data.en.aprilWitch.isbn + "<h5>").fadeIn(400);
             $("#published").hide().html("<h5>Year of publication: " + data.en.aprilWitch.published + "</h5>").fadeIn(400);
-            $("#quote").hide().html(`<h5>Quote: ${data.en.aprilWitch.quote}</h5>`).fadeIn(400);
+            $("#quote").hide().html("<h5>Quote: "+data.en.aprilWitch.quote+"</h5>").fadeIn(400);
             $("#goodreads").hide().html("<a href='" + data.en.aprilWitch.goodReadsURL + "' target='_blank'><img src='../assets/images/icons/goodreads_icon_32x32.png'>Se boken på Goodreads.com</a>").fadeIn(400);
 
         });

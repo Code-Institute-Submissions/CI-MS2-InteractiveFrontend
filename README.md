@@ -1,6 +1,36 @@
 # Code Institute Milestone 2
 ## Interactive Frontend Development
 
+## Table of contents:
+
+#### 1) Introduction
+
+##### 1.1) UX design & User stories
+##### 1.1) UX design & User stories
+##### 1.2) Wireframes
+##### 1.3) Features
+##### 1.4) What to add in the future?
+
+#### 2) Testing
+
+##### 2.1) Why not Jasmine-tested?
+##### 2.2) Manual testing
+###### 2.2.1) Display/Layout testing
+###### 2.2.2) Google Maps
+###### 2.2.3) Google Calendar
+###### 2.2.4) EmailJS
+###### 2.2.5) Validation
+
+##### 3) Deployment and installation
+
+##### 3.1) Deployment
+##### 3.2) Installation
+
+#### 4) Technologies used
+
+
+
+
 
 ### 1) Introduction
 
@@ -72,6 +102,14 @@ Specifically during the testing of this process, I ran into the trouble of the r
 ##### 2.2.4) EmailJS
 
 EmailJS was installed in accordance with their manual [here](https://www.emailjs.com/docs/sdk/installation/), specifically the instructions for using it through an external script. While testing, I encountered nothing unforeseen.
+
+##### 2.2.5) Validation
+
+CSS and HTML was validated using the w3c [CSS validator](https://jigsaw.w3.org/css-validator/) and [HTML validator](https://validator.w3.org/). Minor issues were found in earlier versions of the code, in many cases related to using span elements and problems on contact.html with labelling. These were corrected manually. 
+
+JSHint was used to validate the JavaScript components of the code.
+
+
 
 ### 3) Deployment and installation
 
