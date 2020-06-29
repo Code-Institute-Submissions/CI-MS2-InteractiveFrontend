@@ -46,7 +46,7 @@ The site is intended to facilitate contact between the author and reader, allowi
 
 #### 1.2) Wireframes
 
-The wireframes for the pages in the project can be found [here](wireframes/Wireframes-Milestone-2.pdf.pdf).
+The wireframes for the pages in the project can be found [here](wireframes/Wireframes-Milestone-2.pdf).
 
 #### 1.3) Features
 
