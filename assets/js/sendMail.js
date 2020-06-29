@@ -18,8 +18,11 @@ $('#maContactSheet').on('submit', function (event) {
     }).done(function () {
         // Simple confirmation message.
         $("#mail-confirm").html("<h2>Your mail has been sent!</h2>");
+        $("#maContactSheet").trigger("reset");
+
     }).fail(function (error) {
         // Error message incl. error code.
         $("#mail-confirm").html("<h2>An error has occured! Error code: " + JSON.stringify(error)+"</h2>");
+        $("#maContactSheet")[0].reset();
     });
 });

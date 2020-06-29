@@ -66,11 +66,11 @@ An admin page allowing admins to add events directly to the calendar through the
 
 ### 2.0) Testing
 
-The testing conducted on this project was done manually on a variety of screens, browsers and resolutions. Details can be found in section 2.2. Before then, I thought it was worth mentioning why the choice was made not to test using Jasmine framework.
+The testing conducted on this project was done manually on a variety of screens, browsers and resolutions. Details can be found in section 2.2. Before then, I thought it was worth mentioning why the choice was made not to test using the Jasmine framework.
 
 #### 2.1) Why not Jasmine-tested?
 
-The choice was made to test manually early in the process, based on the prototypes of the scripts needed. The primary way JavaScript is used in the project is to make AJAX calls to APIs, then manipulating the response and using it to update the DOM. Essentially, the thing to test for is thus reduced to A) Did I get the correct data from the server? and B) Did I manage to use this data as intended in the project? Considering the simple logic of those questions, automated testing felt superfluous for this particular assignment.
+The choice was made to test manually early in the process, based on the prototypes of the scripts needed. The primary way JavaScript is used in the project is to make AJAX calls to APIs, then manipulating the response and using it to update the DOM. Essentially, the thing to test for is thus reduced to A) Did I get the correct data from the server? and B) Did I manage to use this data as intended in the project? Considering the simple logic of those questions, automated testing felt superfluous for this particular assignment. Similarily, main.JS is mainly concerned with graphical effects and UI which requires a manual approach to ensure the visuals function properly.
 
 In the future, when producing code with more complex logic, I will definitely implement automatic testing but for the moment it felt like a needless distraction.
 
@@ -79,9 +79,11 @@ In the future, when producing code with more complex logic, I will definitely im
 I began during the design-phase to plan how to test the project. The original plan was to incorporate EmailJS for sending email from the contact page, using the Google Calendars and Google Maps API for listing events and printing directions and finally to include functionality from the Goodreads API.
 Unfortunately [Goodreads API disallows CORS](https://www.goodreads.com/Topic/17893514/comments?subject=17893514) and while there are examples on Stack Overflow of people having gotten it working through back-end methods, neither github pages nor my own host for the project allows the kind of back-end control required.
 
-Once the scope had narrowed to include EmailJS and two of the google APIs, my second thought became safety measures. I created a file named config.js and marked it with gitignore. I then further restricted the API keys contained therein to only function when called from a domain I control and own.
+Once the scope had narrowed to include EmailJS and two of the google APIs, my second thought became safety measures. I created a file named config.js and marked it with gitignore. I then further restricted the API keys contained therein to only function when called from a domain I control and own. The environment variables in config.js are listed in section 3.2.
 
-#### 2.2.1) Display/Layout testing
+##### 2.2.1) Display/Layout testing
+
+![Image of the form testers filled out](assets/images/testing-form.png)
 
 I involved about fifteen people in testing the page on multiple screens. Each tester was given a small form to fill in, noting the device they were using and any display errors they ran into. A number of changes were implemented after I had gone through the feedback. Cosmetic changes were made primarily to things such as the way links were highlighted, the mouseover event having in earlier designs lead to jerky and jarring animations in the navbar.
 
@@ -95,7 +97,7 @@ The script loadCalEvents.js url-encodes this string and combines with a base dir
 
 ##### 2.2.3) Google Calendar
 
-loadCalEvents.JS makes two calls to the google calendar server each time its executed. It uses the list-method first to acquire a date-sorted list of upcoming events from the Calendar.  It then iterates through this list, sending back a request to google calendar for the specifics of that event, before packaging the response in an event-listing on start.html
+loadCalEvents.JS makes two calls to the google calendar server each time its executed. It uses the list-method first to acquire a date-sorted list of upcoming events from the Calendar.  It then iterates through this list, sending back a request to google calendar for the specifics of that event, before packaging the response in an event-listing on start.html.
 
 Specifically during the testing of this process, I ran into the trouble of the returned items being events that had already passed. It now passes a timestamp of the current time with the AJAX-call and ignores any event older than the present time the script is executed. 
 
@@ -108,6 +110,22 @@ EmailJS was installed in accordance with their manual [here](https://www.emailjs
 CSS and HTML was validated using the w3c [CSS validator](https://jigsaw.w3.org/css-validator/) and [HTML validator](https://validator.w3.org/). Minor issues were found in earlier versions of the code, in many cases related to using span elements and problems on contact.html with labelling. These were corrected manually. 
 
 JSHint was used to validate the JavaScript components of the code.
+
+##### 2.2.6) Peer review
+
+After submitting the project for peer-review in slack, the following changes were implemented:
+    
+    JS
+
+ * sendMail.js was updated to clear the form after each submission
+    
+    CSS
+
+ * float:left was removed on smaller screens for the .image-wrap class, as the wrapping effect caused issues with the headers on books.html
+
+    README
+
+ * An image of the form sent out to testers has been attached. See 2.2.1 for details.
 
 
 
