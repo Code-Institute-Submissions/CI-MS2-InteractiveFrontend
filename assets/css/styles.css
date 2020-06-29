@@ -148,7 +148,7 @@ body {
 
 /* Media-query CSS for smaller screen-sizes */
 
-@media screen and(max-width: 640px){
+@media only screen and(max-width: 640px){
 
     .portrait-img{ 
 
@@ -176,7 +176,8 @@ body {
         width: 100%;
         height: auto;
     }
-    .image-wrap{ /* Removing float: left style that caused issues with display on small screens. */
+    img{ /* Removing "float: left;" style that caused issues with display on small screens. */
+        float: none;
         height: auto;
         padding: 2.5%;
     }

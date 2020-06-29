@@ -6,7 +6,7 @@
 #### 1) Introduction
 
 ##### 1.1) UX design & User stories
-##### 1.1) UX design & User stories
+#### 1.1.1) User stories
 ##### 1.2) Wireframes
 ##### 1.3) Features
 ##### 1.4) What to add in the future?
@@ -20,6 +20,7 @@
 ###### 2.2.3) Google Calendar
 ###### 2.2.4) EmailJS
 ###### 2.2.5) Validation
+###### 2.2.6) Peer review
 
 ##### 3) Deployment and installation
 
@@ -29,20 +30,22 @@
 #### 4) Technologies used
 
 
-
-
-
 ### 1) Introduction
 
 This project uses jQuery and Bootstrap for an authors website. Majgull Axelsson is a swedish author and a family member of mine. I have worked at the family company handling social media and general IT in the past. Majgull has decided she does not want a social media presence, but a website to present her work and offer an easy means of contact with her readers and events-bookers is still advantageous to her career and the family business.
 
 #### 1.1) UX design & User stories
 
-The site is intended to facilitate contact between the author and reader, allowing visitors to get information about the authors books and allowing the author to publicize their upcoming events.
+The site is intended to facilitate contact between the author and reader, allowing visitors to get information about the authors books and allowing the author to publicize their upcoming events such as lectures, book-signings etc. While building interest in the reading base is important, the author herself prefers to focus on her writing and thus a full on social-media integration is not beneficial here. On the other hand, the site does provide access to the Goodreads community site, meaning interaction about the media presented on the site is made as easy as possible for visitors.
 
--- Someone looking to book a lecture could contact the author using the contacty page.
+#### 1.1.1) User stories
+
+-- Someone looking to book a lecture could contact the author using the contact page.
 -- Someone looking for information about the authors books in English could use the english-mirror side of the site.
 -- Someone who wants to see upcoming events can see them clearly sorted immediately at the start page and use the integrations with google calendar and google maps to find more information about upconing events and their location.
+-- The author can use it to publish information about upcoming events in an easy-to-access format for their fans
+-- The author can have a single, simple way to communicate with fans without the distractions of maintaining a full social media presence
+-- The author can direct fans wishing to discuss their work to the Goodreads community, providing social media and discussion about the books
 
 #### 1.2) Wireframes
 
@@ -113,7 +116,7 @@ JSHint was used to validate the JavaScript components of the code.
 
 ##### 2.2.6) Peer review
 
-After submitting the project for peer-review in slack, the following changes were implemented:
+After submitting the project for peer-review in slack, the following changes were implemented
     
     JS
 
@@ -126,6 +129,10 @@ After submitting the project for peer-review in slack, the following changes wer
     README
 
  * An image of the form sent out to testers has been attached. See 2.2.1 for details.
+
+   HTML
+
+ * Changes were made to index.html to make the language selection more clear and intuitive. Specifically moving the headers into the two bootstrap columns.
 
 
 
