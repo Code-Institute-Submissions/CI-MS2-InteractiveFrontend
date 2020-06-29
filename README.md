@@ -1,7 +1,7 @@
 # Code Institute Milestone 2
 ## Interactive Frontend Development
 
-A project using public APIs from google and EmailJS to produce a website for an author. Both english and swedish versions of the site are available.
+A project using public APIs from google and EmailJS to produce a website for an author. Both english and swedish versions of the site are available. The site is hosted [here](https://www.patrikaxelsson.one/MS2/index.html).
 
 ## Table of contents:
 
