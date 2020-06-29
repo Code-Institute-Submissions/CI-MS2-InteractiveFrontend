@@ -1,6 +1,8 @@
 # Code Institute Milestone 2
 ## Interactive Frontend Development
 
+A project using public APIs from google and EmailJS to produce a website for an author. Both english and swedish versions of the site are available.
+
 ## Table of contents:
 
 #### 1) Introduction
@@ -49,13 +51,14 @@ The site is intended to facilitate contact between the author and reader, allowi
 
 #### 1.2) Wireframes
 
-The wireframes for the pages in the project can be found [here](wireframes/Wireframes-Milestone-2.pdf).
+The wireframes for the pages in the project can be found [here](wireframes/Wireframes-Milestone-2-New.pdf).
+Late in the project, the language-toggle was redesigned. For completeness, I include the earlier version of the wireframes [here](wireframes/Wireframes-Milestone-2.pdf).
 
 #### 1.3) Features
 
 Functional system for registering and displaying calendar events with directions to locations.
 
-Bilingual content. 
+Bilingual content. The author is published in multiple languages, so an international option in English is available.
 
 Information on all published novels by the author, including links for further discussion on social media.
 
