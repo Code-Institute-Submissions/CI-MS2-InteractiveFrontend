@@ -44,7 +44,7 @@ The site is intended to facilitate contact between the author and reader, allowi
 
 -- Someone looking to book a lecture could contact the author using the contact page.
 -- Someone looking for information about the authors books in English could use the english-mirror side of the site.
--- Someone who wants to see upcoming events can see them clearly sorted immediately at the start page and use the integrations with google calendar and google maps to find more information about upconing events and their location.
+-- Someone who wants to see upcoming events can see them clearly sorted immediately at the start page and use the integrations with google calendar and google maps to find more       information about upconing events and their location.
 -- The author can use it to publish information about upcoming events in an easy-to-access format for their fans
 -- The author can have a single, simple way to communicate with fans without the distractions of maintaining a full social media presence
 -- The author can direct fans wishing to discuss their work to the Goodreads community, providing social media and discussion about the books
@@ -153,7 +153,7 @@ I then went to the API dashboards for google and EmailJS and entered the URL for
 
 To install and run the project, you will require a file named "config.js" inside the "/assets/js/" folder of the project. This file must contain API keys for EmailJS and Google Calendar and Maps API. The latter two must also be activated on your google api [dashboard](https://console.developers.google.com/apis/dashboard?pli=1) and preferably secured further by setting your google dashboard to only accept calls from certain URLs. 
 
-config.js must contain the following environment variables:
+config.js must contain the following environment variables
 
     GCalClient_ID: <Client ID, from the google API dashboard>,
     GCalAPIKey : <API key from the same>,
